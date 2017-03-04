@@ -4,9 +4,12 @@
 # General UI/UX                                                               #
 ###############################################################################
 
-sudo scutil --set ComputerName "RyanMac"
-sudo scutil --set HostName "RyanMac"
-sudo scutil --set LocalHostName "RyanMac"
+sudo scutil --set ComputerName "RyanMacPro"
+sudo scutil --set HostName "RyanMacPro"
+sudo scutil --set LocalHostName "RyanMacPro"
+
+# Install Xcode command line tools.
+xcode-select --install
 
 # install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -69,12 +72,10 @@ apm install --quiet language-cshtml
 apm install --quiet language-puppet
 apm install --quiet linter-puppet-lint
 apm install --quiet language-yaml
+apm install --quiet minimap
 
 ## Clean up after installs
 brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
-
-# Install Xcode command line tools.
-xcode-select --install
 
 ####################################################################
 #                   OSX Settings options                              #
@@ -159,13 +160,13 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 #                               alias setup                                   #
 ###############################################################################
     ## Comp322 shortcuts
-echo alias lab1='cd /Users/ryandhubbard/Sites/Github/Comp322/Labs/Lab1' >> ~/.bash_profile
-echo alias lab2='cd /Users/ryandhubbard/Sites/Github/Comp322/Labs/Lab2' >> ~/.bash_profile
-echo alias lab3='cd /Users/ryandhubbard/Sites/Github/Comp322/Labs/Lab3'>> ~/.bash_profile
-echo alias lab4='cd /Users/ryandhubbard/Sites/Github/Comp322/Labs/Lab4'>> ~/.bash_profile
-echo alias lab5='cd /Users/ryandhubbard/Sites/Github/Comp322/Labs/Lab5'>> ~/.bash_profile
+echo alias lab1='cd /Users/ryandhubbard/Github/Comp322/Labs/Lab1' >> ~/.bash_profile
+echo alias lab2='cd /Users/ryandhubbard/Github/Comp322/Labs/Lab2' >> ~/.bash_profile
+echo alias lab3='cd /Users/ryandhubbard/Github/Comp322/Labs/Lab3'>> ~/.bash_profile
+echo alias lab4='cd /Users/ryandhubbard/Github/Comp322/Labs/Lab4'>> ~/.bash_profile
+echo alias lab5='cd /Users/ryandhubbard/Github/Comp322/Labs/Lab5'>> ~/.bash_profile
 echo alias k200='sshpass -p hub_703319 ssh rdh29144@k200.ecs.csun.edu'>> ~/.bash_profile
 echo alias wirsz='sshpass -p hub_703319 ssh rhubbard@c322.wirsz.com'>> ~/.bash_profile
     ## Folder Shortcuts
-echo alias github='cd /Users/ryandhubbard/Sites/Github'>> ~/.bash_profile
+echo alias github='cd /Users/ryandhubbard/Github'>> ~/.bash_profile
 ########################################################################
