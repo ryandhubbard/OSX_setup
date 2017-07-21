@@ -159,14 +159,6 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 ###############################################################################
 #                               alias setup                                   #
 ###############################################################################
-    ## Comp322 shortcuts
-echo alias lab1='cd /Users/ryandhubbard/Github/Comp322/Labs/Lab1' >> ~/.bash_profile
-echo alias lab2='cd /Users/ryandhubbard/Github/Comp322/Labs/Lab2' >> ~/.bash_profile
-echo alias lab3='cd /Users/ryandhubbard/Github/Comp322/Labs/Lab3'>> ~/.bash_profile
-echo alias lab4='cd /Users/ryandhubbard/Github/Comp322/Labs/Lab4'>> ~/.bash_profile
-echo alias lab5='cd /Users/ryandhubbard/Github/Comp322/Labs/Lab5'>> ~/.bash_profile
-echo alias k200='sshpass -p hub_703319 ssh rdh29144@k200.ecs.csun.edu'>> ~/.bash_profile
-echo alias wirsz='sshpass -p hub_703319 ssh rhubbard@c322.wirsz.com'>> ~/.bash_profile
     ## Folder Shortcuts
 echo alias github='cd /Users/ryandhubbard/Github'>> ~/.bash_profile
 ########################################################################
